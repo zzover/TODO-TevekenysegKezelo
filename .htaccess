@@ -1,0 +1,20 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /
+
+RedirectMatch ^(.+[\d+])/$ $1
+
+## Remove trailing slash
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+RewriteRule ^Authentication/Login$ /inc/sign-in.php [NC,L,QSA]
+RewriteRule ^Authentication/Register$ /inc/sign-up.php [NC,L,QSA]
+RewriteRule ^Home$ /inc/home.php [NC,L,QSA]
+RewriteRule ^ChooseLanguage$ /languageSelector.php [NC,L,QSA]
+RewriteRule ^Profile/([^/]+)$ /inc/profile.php?user=$1 [NC,L,QSA]
+RewriteRule ^ChooseLanguage/([^/]+)$ /languageSelector.php?language=$1 [NC,L,QSA]
+
+ErrorDocument 404 /inc/errors/404.php

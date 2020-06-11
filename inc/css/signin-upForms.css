@@ -1,0 +1,221 @@
+/*      IMPORT FONTS        */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oxanium&display=swap');
+
+/*      TARTALOM        */
+body
+{
+    height: 100vh; width: 100%;
+    border: none; margin: 0; padding: 0;
+    align-items: center;
+    background-color: #313131;
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    justify-content: center;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+/*      HIVATKOZÁS      */
+a
+{
+    color: #382039;
+    text-decoration: none;
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
+
+/*      KONTÉNER        */
+.container
+{
+    /*max-height: 768px;*/ max-width: 480px;
+    background-color: #F0ECE2;
+    border: none; border-radius: 5px;
+    padding: 90px 50px 90px 50px;
+}
+
+/*      FORM ELEMEI     */
+form button
+{
+    height: 50px; width: 300px;
+    background-color: #CA3E47;
+    border: none; border-radius: 3px;
+    color: #FFFFFF;
+    font-size: 12px; font-weight: 700;
+    letter-spacing: 0.5px;
+    margin: 10px 0px 20px 0px;
+    transition: all 400ms ease; -webkit-transition: all 400ms ease;
+}
+
+form button:focus
+{
+    outline: none;
+}
+
+form button:hover
+{
+    background-color: #EE4540;
+}
+
+form .info
+{
+    color: #444444;
+    font-size: 11px; font-weight: 600;
+    margin: 3px 0px 10px 0px;
+    text-decoration: underline;
+}
+form .forgot
+{
+    color: #444444;
+    font-size: 11px; font-weight: 600;
+    margin: 10px 0px 10px 0px;
+    text-decoration: none;
+    float: right;
+}
+
+form input
+{
+    border: 2px solid #FFFFFF; border-radius: 3px;
+}
+
+form input:focus
+{
+    border-bottom: 2px solid #000000; border-radius: 3px;
+    outline: none;
+}
+
+form label
+{
+    display: inline-block;
+}
+
+form .rejtett
+{
+    display: none;
+}
+
+form .title
+{
+    font-family: 'Oxanium';
+    font-size: 28px; font-weight: 800;
+    margin: 0px 0px 30px 0px;
+    text-align: left; text-transform: none;
+}
+
+/*      INPUT-KONTÉNER      */
+.input-container
+{
+    width: 300px;
+    box-sizing: border-box;
+    margin: 0px 0px 8px 0px;
+    padding: 0px;
+    position: relative;
+}
+
+.input-container input
+{
+    width: 100%;
+    background-color: #F0ECE2;
+    border: none; border-bottom: 2px solid #CCCCCC;
+    font-size: 20px;
+    padding: 22px 0px 10px 0px;
+    outline: none;
+}
+
+.input-container label
+{
+    font-family: 'Oxanium';
+    font-size: 18px; font-weight: 600;
+    position: absolute;
+    transform-origin: top left; -webkit-transform-origin: top left;
+    transform: translate(0, 18px) scale(1); -webkit-transform: translate(0, 18px) scale(1);
+    transition: all 0.1s ease-in-out;
+}
+
+.input-container .hiba
+{
+    border-bottom: 3px solid #FF0000; border-radius: 5px;
+}
+
+.input-container.active label
+{
+    transform: translate(0, 4px) scale(0.75); -webkit-transform: translate(0, 4px) scale(0.75);
+}
+
+/*      LISTA ELEM       */
+li
+{
+    color: #444444;
+    font-size: 10px; font-weight: 600;
+}
+
+/*      EGYÉB       */
+.other
+{
+    color: #382039;
+    font-family: 'Oxanium';
+    font-size: 13px; font-weight: 600;
+    text-align: center;
+}
+
+.other:hover
+{
+    text-decoration: underline;
+}
+
+.g-recaptcha
+{
+    margin-bottom: 30px;
+}
+
+/*      ELVÁLASZTÓ CSÍK     */
+.hr-text
+{
+    height: 1.5em;
+    border: none;
+    color: #000000;
+    line-height: 1em;
+    outline: none;
+    opacity: 0.2;
+    position: relative;
+    text-align: center;
+}
+
+.hr-text:after
+{
+    background-color: #F0ECE2;
+    color: #000000;
+    content: attr(data-content);
+    display: inline-block;
+    font-family: 'Open Sans';
+    font-size: 0.7em; font-weight: 800;
+    line-height: 1.5em;
+    padding: 0px 0.5em 0px 0px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.hr-text:before
+{
+    height: 1px; width: 100%;
+    background-color: #382039;
+    content: '';
+    position: absolute;
+    top: 50%; left: 0;
+}
+
+/*      NYILAK      */
+i
+{
+    border: solid #444444; border-width: 0 3px 3px 0;
+    display: inline-block;
+    margin-left: 5px; padding: 2px;
+}
+
+.up { transform: rotate(-135deg); -webkit-transform: rotate(-135deg); }
+.right { transform: rotate(-45deg); -webkit-transform: rotate(-45deg); }
+.down { transform: rotate(45deg); -webkit-transform: rotate(45deg); }
+.left { transform: rotate(135deg); -webkit-transform: rotate(135deg); }

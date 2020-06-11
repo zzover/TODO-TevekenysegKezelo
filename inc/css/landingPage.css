@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+*
+{
+    margin: 0; padding: 0;
+}
+
+body
+{
+    background-color: #313131;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper
+{
+    min-height: 100%;
+}
+
+.kartya
+{
+    align-items: center;
+    background-color: #F0ECE2;
+    border: none; border-radius: 5px;
+    box-shadow: 0px 20px 60px rgba(0, 0, 0, .2);
+    box-sizing: border-box;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1.5fr 1fr;
+    justify-content: center;
+    margin: 50px 20px;
+    padding: 30px;
+}
+
+.container
+{
+    width: 100%;
+    display: block;
+}
+
+.container img
+{
+    width: 100%;
+}
+
+.container .idezet
+{
+    color: #999999;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+}
+
+.container .idezet #szerzo
+{
+    position: relative;
+    left: 10px;
+    top: 20px;
+}
+
+.nav strong a
+{
+    color: inherit;
+    font-size: 2em;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav strong a:hover
+{
+    color: #999999;
+}
+
+.content
+{
+    align-items: center;
+    display: grid;
+    /*margin: 50px 30px;*/
+}
+
+.info h2
+{
+    font-size: 1.8em;
+    line-height: 2;
+    margin-bottom: 60px;
+}
+
+.info p
+{
+    color:black;
+    margin-bottom: 10px;
+}
+
+.info a
+{
+    background-color: #CA3E47;
+    border: none; border-radius: 3px;
+    color: #FFFFFF;
+    float: right;
+    font-size: 1.2em; font-weight: 500;
+    letter-spacing: 0.5px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 400ms ease; -webkit-transition: all 400ms ease;
+}
+
+.info a:hover
+{
+    background-color: #EE4540;
+}
+
+a.language
+{
+color: #000000;
+    background-color: #F0ECE2;
+}
+
+a.language:hover
+{
+    background-color: #F0ECE2;
+}
+
+@media screen and (max-width: 1024px)
+{
+    .kartya
+    {
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: auto;
+    }
+}
